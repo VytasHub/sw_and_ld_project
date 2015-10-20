@@ -1,0 +1,26 @@
+{
+  "name": "linked_data_project",
+  "version": "0.0.1",
+  "description": "https://github.com/helmet33/sw_and_ld",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helmet33/sw_and_ld.git"
+  },
+  "author": "Garrett Jordan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/helmet33/sw_and_ld/issues"
+  },
+  "homepage": "https://github.com/helmet33/sw_and_ld#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "keywords": [
+    "0.0.1"
+  ]
+}
