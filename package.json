@@ -1,7 +1,7 @@
 {
   "name": "linked_data_project",
   "version": "0.0.1",
-  "description": "https://github.com/helmet33/sw_and_ld",
+  "description": "https://github.com/helmet33/sw_and_ld_project",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/helmet33/sw_and_ld.git"
+    "url": "git+https://github.com/helmet33/sw_and_ld_project.git"
   },
   "author": "Garrett Jordan",
   "license": "ISC",
