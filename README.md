@@ -33,7 +33,7 @@ I intend to use update as the exposed verb to avoid confusion between put and po
 ## Technologies
 ### Software
 
-It is my intention to use node.js (Node) and express.js (Express) to create a public API that can be queried externally and 3 internal apis that query the individual data sets. Node and Express are used as they are free and open source, light-weight and effecient. The internal APIs are to be queried through the external API. Any additional modules outside those provided by Node and Express will be documented here if required. All module will be loaded through the Node Package Manager (npm) which is a collection of open source libraries.
+It is my intention to use node.js (Node) and express.js (Express) to create a public API that can be queried externally and three internal APIs that query the individual data sets. Node and Express are used as they are free and open source, light-weight and effecient. The internal APIs are to be queried through the external API. Any additional modules outside those provided by Node and Express will be documented here if required. All module will be loaded through the Node Package Manager (npm) which is a collection of open source libraries.
 
 ### Initial thoughts on database to use
 
