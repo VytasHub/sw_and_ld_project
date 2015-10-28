@@ -1,4 +1,4 @@
-# Semantic Web Project
+# Semantic Web & Linked Data Project
 
 ## Parking in Galway
 ### Garrett Jordan
