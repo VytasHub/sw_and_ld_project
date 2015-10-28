@@ -10,7 +10,7 @@ Each region should expose the same API which in turn is accessed by our external
 
 ## Entry Points/Routes
 ### Proposed routes and entry points:
-Deadline | Submission
+Route | Description
 ---------|------------
  / | Returns list of implemented areas in lower case, for the scope of this project galway.
  /galway/ | Returns ALL parking from all 3 data sets
