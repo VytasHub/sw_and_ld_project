@@ -9,7 +9,7 @@ Provide an API to combine data from Galway City Council on car parks in Galway C
 Each region should expose the same API which in turn is accessed by our external API. This layered approach will allow for different data storage and data structures for each region if required. Such variation will be encapsulated and transparent to both the external API and the user.
 
 ## Entry Points/Routes
-### Proposed routes and entry points:
+### Proposed routes and entry points
 Route | Description
 ---------|------------
  / | Returns list of implemented areas in lower case, for the scope of this project galway.
@@ -33,7 +33,7 @@ I intend to use update as the exposed verb to avoid confusion between put and po
 ## Technologies
 ### Software
 
-It is my intention to use node.js(Node) and express.js(Express) to create a public API that can be queried externally and 3 internal apis that query the individual data sets. Node and Express are used as they are free and open source, light-weight and effecient. The internal APIs are to be queried through the external API. Any additional modules outside those provided by Node and Express will be documented here if required. All module will be loaded through the Node Package Manager (npm) which is a collection of Open Source libraries.
+It is my intention to use node.js (Node) and express.js (Express) to create a public API that can be queried externally and 3 internal apis that query the individual data sets. Node and Express are used as they are free and open source, light-weight and effecient. The internal APIs are to be queried through the external API. Any additional modules outside those provided by Node and Express will be documented here if required. All module will be loaded through the Node Package Manager (npm) which is a collection of open source libraries.
 
 ### Initial thoughts on database to use
 
