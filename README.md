@@ -10,28 +10,30 @@ Each region should expose the same API which in turn is accessed by our external
 
 ## Entry Points/Routes
 ### Proposed routes and entry points:
-
- * / - Returns json list of implemented areas in lower case, for the scope of this project galway.
- * /galway/ - returns ALL parking from all 3 data sets
- * /galway/get/all/ - returns same as above (more descriptive.
- * /galway/get/blue/ - returns list of blue ticket (special needs) parking spots only
- * /galway/get/display/ - returns a list of all pay and display parking spots
- * /galway/get/carparks/ - returns a list of car parks
- * /galway/get/blue/{par} - returns ablue ticket (special needs) parking spot based on param
- * /galway/get/display/{par} - returns a pay and display parking spot based on parameter
- * /galway/get/carparks/{par} returns a car park based on parameter 
- * /galway/post/carpark/ - add a car park
- * /galway/post/blue/ - add a special needs parking space
- * /galway/post/display/ - add pay and display parking area
- * /galway/delete/{param} - delete the parking area designated by param
- * /galway/update/[param} - update the parking space designated by param
+Deadline | Submission
+---------|------------
+ / | Returns json list of implemented areas in lower case, for the scope of this project galway.
+ /galway/ | Returns ALL parking from all 3 data sets
+ /galway/get/ | Returns same as above.
+ /galway/get/all/ | Returns same as above (more descriptive).
+ /galway/get/blue/ | Returns list of blue ticket (special needs) parking spots only
+ /galway/get/display/ | Returns a list of all pay and display parking spots
+ /galway/get/carparks/ | Returns a list of car parks
+ /galway/get/blue/{par} | Returns ablue ticket (special needs) parking spot based on param
+ /galway/get/display/{par} | Returns a pay and display parking spot based on parameter
+ /galway/get/carparks/{par} | Returns a car park based on parameter 
+ /galway/post/carpark/ | Add a car park
+ /galway/post/blue/ | Add a special needs parking space
+ /galway/post/display/ | Add pay and display parking area
+ /galway/delete/{param} | Delete the parking area designated by param
+ /galway/update/[param} | Update the parking space designated by param
  
 I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actal HTTP verb. These routes maybe subject to change.
 
 ## Databases
 ### Initial thoughts on database to use
 
-I think that this project is suited to a Couchbase &trade; database due to its native, be it limited, support for geojson. This may change if another database is more suited to the task. More then one database may be used going forward, depending on the suitability of other regions data.
+I think that this project is suited to a Couchbase&trade; database due to its native, be it limited, support for geojson. This may change if another database is more suited to the task. More then one database may be used going forward, depending on the suitability of other regions data.
 
  
 
