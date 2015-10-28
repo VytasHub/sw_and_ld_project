@@ -30,7 +30,11 @@ Deadline | Submission
  
 I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actual HTTP verb. All lists returned will be in JSON format. These routes maybe subject to change.
 
-## Databases
+## Technologies
+### Software
+
+It is my intention to use node.js(Node) and express.js(Express) to create a public API that can be queried externally and 3 internal apis that query the individual data sets. Node and Express are used as they are free and open source, light-weight and effecient. The internal APIs are to be queried through the external API. Any additional modules outside those provided by Node and Express will be documented here if required. All module will be loaded through the Node Package Manager (npm) which is a collection of Open Source libraries.
+
 ### Initial thoughts on database to use
 
 I think that this project is suited to a Couchbase&trade; database due to its native, be it limited, support for geojson. This may change if another database is more suited to the task. More then one database may be used going forward, depending on the suitability of other regions data.
