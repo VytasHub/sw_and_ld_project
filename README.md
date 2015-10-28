@@ -28,7 +28,7 @@ Deadline | Submission
  /galway/delete/{param} | Delete the parking area designated by param
  /galway/update/[param} | Update the parking space designated by param
  
-I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actal HTTP verb. All lists returned will be in JSON format. These routes maybe subject to change.
+I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actual HTTP verb. All lists returned will be in JSON format. These routes maybe subject to change.
 
 ## Databases
 ### Initial thoughts on database to use
