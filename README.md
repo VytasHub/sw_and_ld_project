@@ -12,7 +12,7 @@ Each region should expose the same API which in turn is accessed by our external
 ### Proposed routes and entry points:
 Deadline | Submission
 ---------|------------
- / | Returns json list of implemented areas in lower case, for the scope of this project galway.
+ / | Returns list of implemented areas in lower case, for the scope of this project galway.
  /galway/ | Returns ALL parking from all 3 data sets
  /galway/get/ | Returns same as above.
  /galway/get/all/ | Returns same as above (more descriptive).
@@ -28,7 +28,7 @@ Deadline | Submission
  /galway/delete/{param} | Delete the parking area designated by param
  /galway/update/[param} | Update the parking space designated by param
  
-I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actal HTTP verb. These routes maybe subject to change.
+I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actal HTTP verb. All lists returned will be in JSON format. These routes maybe subject to change.
 
 ## Databases
 ### Initial thoughts on database to use
