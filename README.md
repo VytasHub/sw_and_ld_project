@@ -16,17 +16,17 @@ Route | Description
  /galway/ | Returns ALL parking from all 3 data sets
  /galway/get/ | Returns same as above.
  /galway/get/all/ | Returns same as above (more descriptive).
- /galway/get/blue/ | Returns list of blue ticket (special needs) parking spots only
- /galway/get/display/ | Returns a list of all pay and display parking spots
- /galway/get/carparks/ | Returns a list of car parks
- /galway/get/blue/{par} | Returns ablue ticket (special needs) parking spot based on param
- /galway/get/display/{par} | Returns a pay and display parking spot based on parameter
- /galway/get/carparks/{par} | Returns a car park based on parameter 
- /galway/post/carpark/ | Add a car park
- /galway/post/blue/ | Add a special needs parking space
- /galway/post/display/ | Add pay and display parking area
- /galway/delete/{param} | Delete the parking area designated by param
- /galway/update/[param} | Update the parking space designated by param
+ /galway/get/blue/ | Returns list of blue ticket (special needs) parking spots only.
+ /galway/get/display/ | Returns a list of all pay and display parking spots.
+ /galway/get/carparks/ | Returns a list of car parks.
+ /galway/get/blue/{param} | Returns ablue ticket (special needs) parking spot based on given parameter.
+ /galway/get/display/{param} | Returns a pay and display parking spot based on given parameter.
+ /galway/get/carparks/{param} | Returns a car park based on given parameter. 
+ /galway/post/carpark/ | Add a car park.
+ /galway/post/blue/ | Add a special needs parking space.
+ /galway/post/display/ | Add pay and display parking area.
+ /galway/delete/{param} | Delete the parking area designated by given parameter.
+ /galway/update/{param} | Update the parking space designated by given parameter.
  
 I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actual HTTP verb. All lists returned will be in JSON format. These routes maybe subject to change.
 
@@ -61,9 +61,9 @@ Apps4gaps have asked you build an API that is available over HTTP. They have ask
 
 Deadline | Submission
 ---------|------------
-5pm October 28th 2015 | Submit plan for API in form of README in GitHub repository
-5pm November 18th 2015 | Submit code through GitHub repository
-Last weeks of term | Presentations (order to be confirmed)
+5pm October 28th 2015 | Submit plan for API in form of README in GitHub repository.
+5pm November 18th 2015 | Submit code through GitHub repository.
+Last weeks of term | Presentations (order to be confirmed).
 
 
 
