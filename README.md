@@ -39,6 +39,8 @@ It is my intention to use node.js (Node) and express.js (Express) to create a pu
 
 I think that this project is suited to a Couchbase&trade; database due to its native, be it limited, support for geojson. This may change if another database is more suited to the task. More then one database may be used going forward, depending on the suitability of other regions data.
 
+After testing opting to use CouchDB (See testing section below - 4th November).
+
 
 
 ## Data Used
@@ -71,3 +73,4 @@ Section | Implementation | Outcome | Start
 --------|----------------|---------|-------
 Database | Install Couchdb under Open Suse 13.2 | Testing (Implementation pending test) | 29th October
 Data | Use partial data as plain JSON (no db) | Testing (No implemenataion Planned) | 31 October
+Database | Couch import working with Diamond json | Tested (Implementing on actual data | 4 November
