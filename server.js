@@ -29,6 +29,29 @@ app.get('/data/:id', function(req, res) {
     res.json(data[req.params.id]);
 });
 
+//Holders
+
+app.get('/galway/', function(req, res) {
+  res.send('Will respond with all parking areas in galway!');
+});
+
+app.get('/galway/getParking', function(req, res) {
+  res.send('Will return all car parks in Galway!');
+});
+
+app.get('/galway/getMeters', function(req, res) {
+  res.send('Will return all on street parking in Galway!');
+});
+
+app.get('/galway/getBlueTicket', function(req, res) {
+  res.send('Will return all special needs designated spaces in Galway!');
+});
+
+app.get('/galway/getAllButBlue', function(req, res) {
+  res.send('All non special needs areas in galway!');
+});
+
 
 // Start the server.
 var server = app.listen(8000);
+console.log("Server running on port 8000. Check it out.");
