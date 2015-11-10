@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/helmet33/sw_and_ld#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "nano": "^6.1.5"
   },
   "keywords": [
     "0.0.1"

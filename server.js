@@ -3,6 +3,12 @@ var fs = require('fs');
 // Import express to create and configure an HTTP server and routing.
 var express = require('express');
 
+// Connect to remote hosted couch instance
+//var nano = require('nano')('http://redacted:5984');
+
+// Connect to local couch instance
+var nano = require('nano')('http://localhost:5984');
+
 // Create a HTTP server app.
 var app = express();
 
