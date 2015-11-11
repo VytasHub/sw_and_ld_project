@@ -1,8 +1,5 @@
-{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
-"features": [
+{                                                                             
+"docs": [
 { "type": "Feature", "properties": { "OBJECTID": 1, "MACHINEID": "002", "LOCATION": "Bridgets Tce" }, "geometry": { "type": "Point", "coordinates": [ -9.04780900038503, 53.277284999902861 ] } },
 { "type": "Feature", "properties": { "OBJECTID": 2, "MACHINEID": "03A", "LOCATION": "Bohermore" }, "geometry": { "type": "Point", "coordinates": [ -9.047090999649868, 53.276892999812162 ] } },
 { "type": "Feature", "properties": { "OBJECTID": 3, "MACHINEID": "001", "LOCATION": "Bohermore" }, "geometry": { "type": "Point", "coordinates": [ -9.046743999835655, 53.27727300024884 ] } },

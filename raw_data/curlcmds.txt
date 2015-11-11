@@ -1,0 +1,5 @@
+curl -d @CarParkingOpenData.geojson -H "Content-type: application/json" -X POST http://127.0.0.1:5984/galway/_bulk_docs
+
+curl -d @BlueBadgeParkingOpenData.geojson -H "Content-type: application/json" -X POST http://127.0.0.1:5984/galway/_bulk_docs
+
+curl -d @ParkingMetersOpenData.geojson -H "Content-type: application/json" -X POST http://127.0.0.1:5984/galway/_bulk_docs

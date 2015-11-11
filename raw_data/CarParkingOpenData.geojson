@@ -1,8 +1,5 @@
-{
-"type": "FeatureCollection",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-                                                                                
-"features": [
+{                                                                          
+"_docs": [
 { "type": "Feature", "properties": { "OBJECTID": 1, "NAME": "Market St", "TYPE": "Pay\/Surface Carpark", "NO_SPACES": "88", "Lat": 53.273, "Long": -9.054, "EastITM": 529691.955, "NorthITM": 725294.803, "EastIG": 129726.012, "NorthIG": 225265.639 }, "geometry": { "type": "Point", "coordinates": [ -9.053499750875776, 53.273082469830108 ] } },
 { "type": "Feature", "properties": { "OBJECTID": 2, "NAME": "Jurys Hotel", "TYPE": "Multistorey Carpark", "NO_SPACES": "348", "Lat": 53.271, "Long": -9.055, "EastITM": 529620.784, "NorthITM": 725010.839, "EastIG": 129654.828, "NorthIG": 224981.613 }, "geometry": { "type": "Point", "coordinates": [ -9.054503903368941, 53.270521155078541 ] } },
 { "type": "Feature", "properties": { "OBJECTID": 3, "NAME": "Gaol Rd \/ Cathedral", "TYPE": "Pay\/Surface Carpark", "NO_SPACES": "161", "Lat": 53.274, "Long": -9.057, "EastITM": 529481.534, "NorthITM": 725397.739, "EastIG": 129515.546, "NorthIG": 225368.595 }, "geometry": { "type": "Point", "coordinates": [ -9.056677150391952, 53.273979585968917 ] } },
