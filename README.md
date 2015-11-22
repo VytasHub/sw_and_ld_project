@@ -19,6 +19,7 @@ Route | Description
  /galway/get/blue/ | Returns list of blue ticket (special needs) parking spots only.
  /galway/get/display/ | Returns a list of all pay and display parking spots.
  /galway/get/carparks/ | Returns a list of car parks.
+ /galway/get/park/{id} | Returns a single car park with id == id
  /galway/post/carpark/ | Add a car park.
  /galway/post/blue/ | Add a special needs parking space.
  /galway/post/meter/ | Add pay and display parking area.

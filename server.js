@@ -128,7 +128,15 @@ app.get('/galway/get/blue', function(req,res){
 });
 });
 
+// Returns a specific document
+// Returns a single document as json when given it's id
+app.get('/galway/get/park/:doc', function(req,res){
+    doc_id = req.params.doc;
+    db.get(doc_id,function(error, doc){
+        res.send(doc);
+    });
 
+});
 
 // ++++++++++++++++++++++++++++++++++++++++++ Posts ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 // All posts to be sent json data with type = meter || carparks || blue
