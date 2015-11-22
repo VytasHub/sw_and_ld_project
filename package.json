@@ -18,8 +18,11 @@
   },
   "homepage": "https://github.com/helmet33/sw_and_ld#readme",
   "dependencies": {
+    "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "nano": "^6.1.5"
+    "nano": "^6.1.5",
+    "pouchdb": "^5.1.0",
+    "request": "^2.67.0"
   },
   "keywords": [
     "0.0.1"
