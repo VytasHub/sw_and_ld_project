@@ -5,7 +5,7 @@
 
 ## Overview
 
-Provide an API to combine data from Galway City Council on car parks in Galway City, Parking Meters in Galway City and Blue Badge parking spots in Galway City. As car parks and parking areas are subject to change the API will allow not only the querying of existing data but also the addition of new data, the modification of the existing data and the deletion of obsolete data. The API calls will reflect the HTTP verbs used and will be self describing. The project is to be developed in such a way that the addition of other towns/areas does not break the existing API and can be achieved by adding another route eg URL/galway/ and URL/athlone/ etc.
+Provide an API to combine data from Galway City Council on car parks in Galway City, Parking Meters in Galway City and Blue Badge parking spots in Galway City. As car parks and parking areas are subject to change the API will allow not only the querying of existing data but also the addition of new data and the deletion of obsolete data. The API calls will reflect the HTTP verbs used and will be self describing. The project is to be developed in such a way that the addition of other towns/areas does not break the existing API and can be achieved by adding another route eg URL/galway/ and URL/athlone/ etc.
 Each region should expose the same API which in turn is accessed by our external API. This layered approach will allow for different data storage and data structures for each region if required. Such variation will be encapsulated and transparent to both the external API and the user.
 
 ## Entry Points/Routes
@@ -105,6 +105,13 @@ http://localhost:8000/galway/
 returns json array of all documents
 
 ```
+
+```
+http://localhost:8000/galway/get/park/64f7940bd8922c1394cd76a27b04891f
+returns the parking object with _id = 64f7940bd8922c1394cd76a27b04891f
+
+```
+
 
 To post an object the type value and properties of added item are required. The type value must be valid i.e. meter, carparks or blue. Postman was used to test all routes.
 The json array you submitted will be returned on success. A few examples:
