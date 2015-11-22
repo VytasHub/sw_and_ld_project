@@ -7,6 +7,7 @@
 
 Provide an API to combine data from Galway City Council on car parks in Galway City, Parking Meters in Galway City and Blue Badge parking spots in Galway City. As car parks and parking areas are subject to change the API will allow not only the querying of existing data but also the addition of new data and the deletion of obsolete data. The API calls will reflect the HTTP verbs used and will be self describing. The project is to be developed in such a way that the addition of other towns/areas does not break the existing API and can be achieved by adding another route eg URL/galway/ and URL/athlone/ etc.
 Each region should expose the same API which in turn is accessed by our external API. This layered approach will allow for different data storage and data structures for each region if required. Such variation will be encapsulated and transparent to both the external API and the user.
+The intention is to use this API as a backend for web apps.
 
 ## Entry Points/Routes
 ### Proposed routes and entry points
@@ -28,14 +29,23 @@ Route | Description
 
 I intend to use update as the exposed verb to avoid confusion between put and post but intend to use put as the actual HTTP verb. All lists returned will be in JSON format. These routes maybe subject to change.
 
+
+
 ## Technologies
 ### Software
 
-It is my intention to use node.js (Node) and express.js (Express) to create a public API that can be queried externally and three internal APIs that query the individual data sets. Node and Express are used as they are free and open source, light-weight and effecient. The internal APIs are to be queried through the external API. Any additional modules outside those provided by Node and Express will be documented here if required. All module will be loaded through the Node Package Manager (npm) which is a collection of open source libraries.
+It is my intention to use node.js (Node) and express.js (Express) to create a public API that can be queried externally and three internal APIs that query the individual data sets. Node and Express are used as they are free and open source, light-weight and efficient. The internal APIs are to be queried through the external API. Any additional modules outside those provided by Node and Express will be documented here if required. All module will be loaded through the Node Package Manager (npm) which is a collection of open source libraries.
 
-Following testing it was found to be preferable to add the three datasets to the same database and use a type value in the data to differentiate the documents. This allowed for a single api end point.
+Following testing it was found to be preferable to add the three datasets to the same database and use a type value in the data to differentiate the documents. This allowed for a single API end point.
 
 Future use will require a database for each region used which would be more manageable.
+
+Other modules used (all npm installed and saved):
+
+* pouchdb - Local wrapper for connecting to couch
+* querystring - Build and pass query strings to couchdb
+* request - Process http calls , used for testing
+* body-parser - Parse JSON passed to POST requests
 
 ### Initial thoughts on database to use
 
@@ -92,17 +102,29 @@ Last weeks of term | Presentations (order to be confirmed).
 Section | Implementation | Outcome | Start
 --------|----------------|---------|-------
 Database | Install Couchdb under Open Suse 13.2 | Testing (Implementation pending test) | 29th October
-Data | Use partial data as plain JSON (no db) | Testing (No implemenataion Planned) | 31 October
+Data | Use partial data as plain JSON (no db) | Testing (No implemenatation Planned) | 31 October
 Database | Couch import working with Diamond json | Tested (Implementing on actual data | 4 November
 Data | Data can be added to single database | Implemented (Now a single API) | 12 November
 API | Tested all endpoints | Continuous (All end points tested daily) | 21 November
 
+## Quick start
+Install and run CouchDB ( available here). Add database called galway and import data as detailed in the Data Used - Datasets, Attribution & Licencing section above.
+In the directory where server.js resides run the following  command to install all  required modules:
+```bash
+npm init
+```
+then fire up the server:
+```bash
+node server.js
+```
+Try out the examples using your favorite tool or browser where applicable.
+
 ## Examples
-Each of the get endpoints can be used via cUrl, a modern web browser or Rest testing tool e.g Postman or REStClient. Examples include:
+Each of the get endpoints can be used via cURL, a modern web browser or Rest testing tool e.g Postman or REStClient. Examples include:
 
 ```
 http://localhost:8000/galway/
-returns json array of all documents
+returns JSON array of all documents
 
 ```
 
@@ -167,5 +189,5 @@ Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0g
 
 or as cURL:
 ```bash
-curl -X DELETE -H "Cache-Control: no-cache" -H "Postman-Token: 082354bd-1973-78ba-c2ec-6a9e3984ec0d" 'http://127.0.0.1:8000/del/698f9578f6ec64893c241c0f61000fbc'
+curl -X DELETE -H "Cache-Control: no-cache"  'http://127.0.0.1:8000/del/698f9578f6ec64893c241c0f61000fbc'
 ```
